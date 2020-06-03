@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset='utf-8'>
+    <title>Listado de telefonos</title>
+
+    <link rel="stylesheet" type="text/css" href="../estilos/fondoGeneral.css">
+    <link rel="stylesheet" type="text/css" href="../estilos/estilo_lista.css"/>
+
+    <script src="../JS/listar.js"></script>
+</head>
+
+<body>
+    <form>
+        <input type="text" id="cedula" name="cedula" value="">
+        <input type="button" id="buscarcedula" name="buscarcedula" value="Listar" onclick="listar()">
+        <input type="button" id="cancelar" name="cancelar" value="Cancelar" onclick="location.href='index.html'">
+        <div id="separador"></div>
+    </form>
+    <h2>Informacion de los tickects</h2>
+    <div id="informacion"><b></b></div>
+
+</body>
+</html>

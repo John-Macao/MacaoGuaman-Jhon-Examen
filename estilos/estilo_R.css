@@ -1,0 +1,43 @@
+
+header{
+    text-align: center;
+}
+
+fieldset{
+    background-color: #CACFD2;
+    width: 500px;
+    margin-top: 60px ;
+    margin-left: 460px;
+    margin-bottom: 100px;
+}
+
+form label{
+    margin-left: 50px;
+    margin-top: 20px;
+    display: block;
+}
+
+input[type=text], input[type=password]{
+    margin-left: 50px;
+    width: 400px;
+    
+}
+
+input[type=submit], #cancelar{
+    float: right;
+    margin-top: 20px;
+}
+
+input#agregar{
+    margin-right: 45px;
+}
+
+.error{
+    display: block;
+    margin-left: 50px;
+    color: red;
+}
+
+div{
+    clear: both;
+}

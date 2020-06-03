@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <title>Formulario</title>
+    <link rel="stylesheet" type="text/css" href="../estilos/estilo_R.css"/>
+
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <form method="POST" onsubmit="return validacion(this)" action="../controladores/crear_usuario.php">
+        <fieldset>
+            <legend>Registro de Ticket</legend>
+
+            <label>Fecha Ingreso (*)</label>
+            <input type="text" id="dni" name="dni" onkeyup="return noLetras(this), validarCedula(0)" />
+            <span id="mcedula" class="error"></span>
+
+            <label>Hora de Ingreso (*)</label>
+            <input type="text" id="name" name="name" onkeyup="return noNumeros(this), validarNA(this, 'mnombre', 1)"/>
+            <span id="mnombre" class="error"></span>
+
+            <label>Fecha Salida (*)</label>
+            <input type="text" id="lastname" name="lastname" onkeyup="return noNumeros(this), validarNA(this, 'mapellido', 2)"/>
+            <span id="mapellido" class="error"></span>
+
+            <label>Hora salida (*)</label>
+            <input type="text" id="address" name="address" onkeyup="return verificarDT(this, 'mdireccion', 3)"/>
+            <span id="mdireccion" class="error"></span>
+
+            <input id="agregar" type="submit" value="Agregar"/>
+            <input id="cancelar" type="button" value="Cancelar" onclick="location.href='index.html'">
+            <div></div>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
