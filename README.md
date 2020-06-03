@@ -1,5 +1,5 @@
 ## Nombre de la Base 
-![1](/imagenesReadMe/nombeBD.png?raw=true "Title")
+![1](/imagenesReadMe/nombreBD.png?raw=true "Title")
 
 ## Tablas la base
 ### Usuarios
